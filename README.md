@@ -2,4 +2,6 @@
 
 COVID-19 Trends in the United States of America
 
+By: Archit Gubiligari, Ankit Gubiligari, and Christine Park
+
 Shinyapps link: 
