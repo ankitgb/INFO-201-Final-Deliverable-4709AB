@@ -1,4 +1,4 @@
-# INFO-201-Final-Deliverable-4709AB (Summmer 2022)
+# INFO-201-Final-Deliverable-4709AB (Summer 2022)
 
 # COVID-19 Trends in the United States of America
 
