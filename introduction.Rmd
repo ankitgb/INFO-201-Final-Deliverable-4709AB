@@ -7,13 +7,15 @@ output: html_document
 ```{r setup}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## R Markdown
+Introduction
+Archit Gubiligari | Ankit Gubiligari | Christine Park
 
 
 
 ```{r}
-
+```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
+knitr::include_graphics("https://github.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/blob/main/coronavirus-2.tmb-479v.jpg?raw=true")
+```
 ```
 
 ## Including Plots
