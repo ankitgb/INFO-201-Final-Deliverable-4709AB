@@ -1,25 +1,31 @@
 ---
 title: "Introduction"
-author: "Archit Gubiligari, Ankit Gubiligari, Christine Park"
 output: html_document
 ---
 
 ```{r setup}
-knitr::opts_chunk$set(echo = TRUE)
 ```
-Introduction
 Archit Gubiligari | Ankit Gubiligari | Christine Park
 
 
 
-```{r}
-```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
+
+```{r pressure, echo=FALSE, fig.cap="The Deadly Covid 19 Virus", out.width = '100%'}
 knitr::include_graphics("https://github.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/blob/main/coronavirus-2.tmb-479v.jpg?raw=true")
 ```
-```
 
-## Including Plots
+Looking at our past couple of years, a lot has changed due to COVID-19 Pandemic that has taken the world by storm. Mask mandates and little to no social gatherings caused the world to fall into a depression that is still reaping the world today. Many mistakes were made in the world by not taking action quickly enough to combat this virus and the citizens often were ignorant or did not fully understand the severity of this pandemic situation. With these datasets and our analysis, we hope to provide more education to the public about the Virus and our resources to combat it as long as COVID-19 is still present.
 
+
+Guiding Questions:
+
+1. How did the population of people in the US with COVID increase as the pandemic continued and resources declined?
+
+  1.    
+
+  2.
+  
+  3.
 
 
 ```{r}
