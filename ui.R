@@ -70,9 +70,7 @@ shinyUI(
                p("Some concerns about this dataset include many outliers and people that got 
                                   covid and were asymptomatic or did not seek treatment.")),
                tabPanel(title = "Vaccination in USA",
-                        p("The following data visualization is meant
-                                  to illustrate trend in vaccination at a 
-                                  stated time range"),
+                        p("The following data visualization is meant to represent the trend in total vaccinations within January 2021. Each state is represented within the plot with a different color in order to show the difference between each of the 50 states trends within the United States of America. If you select 'total_vaccinations' from the drop down menu for the y-axis, select start date as '01/01/2021', and end date as '02/02/2021', the code will create plot 1 which shows the total number of vaccinations that occurred over the month of January 2021. Some patterns that I have noticed within the data are that Washington State (colored in Pink) has a significantly higher vaccination rate than the other states in America. As the year began, people started with a low daily amount of vaccinations but this quickly increased from 0 vaccinations at the start of the month all the way to 3*10^7 vaccinations by the start of February. Out of all the states, the southern-most states seem to have the least amount of total vaccinations by the end of January followed by the midwest states. One general trend that we have observed after creating these interactive plots with the data is that people are generally increasing their rates of vaccination as time goes on, yet some states are falling behind others in the race to get fully vaccinated. As you dive deeper into our project exploring the interactive pages regarding COVID-19 vaccination trends in the United States, many new variables will arise such as total distribution. Continue to explore the next few interactive pages to further your understanding of COVID-19 trends within America with more specific variables."),
                         sidebarPanel(
                           dateRangeInput("Date1","Select Date:",
                                          start = "2020-12-20",
@@ -160,7 +158,7 @@ shinyUI(
                ),
                title = "Conclusion",
                h1("Summary"),
-               p("A key takeaway in the Vaccination in the USA chart is that 
+               p("A key takeaway in the Vaccination in the USA chart is that all the states in the United States of America have the same general positively correlated trend between the amount of time that has passed in a month and the total number of vaccinations that have administered to citizens of the United States. As time goes on, the results can be viewed in a positive way as more and more people are being informed about the benefits to COVID-19 vaccination and being influenced to go get vaccinated. Washington State and the West Coast States seem to be the areas with the most total vaccinations, yet the other states are well on their way to increasing their vaccination rates as well.
                   A key takeaway in the Vaccination across the States chart is that
                  A key takeaway in the relationship between two variables chart is that there is a strong direct positive relationship between the variables vaccines distributed and vaccines administered in Washington State in January of 2021. These results can be viewed in many different ways but this indication of a strong positive correlation signifies that as more vaccines are getting distributed, more people are getting vaccinated in Washington. This ideology can be seen not just in Washington, but in the rest of the world in the struggle against COVID-19."),
                h1("Conclusion"),
