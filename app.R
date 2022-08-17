@@ -7,6 +7,9 @@
 #    http://shiny.rstudio.com/
 #
 
+source("ui.R")
+source("server.R")
+
 library(shiny)
 
 # Create Shiny object
