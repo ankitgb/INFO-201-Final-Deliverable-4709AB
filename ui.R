@@ -91,3 +91,49 @@ shinyUI(
                         mainPanel(
                           plotOutput("plot1")
                         )
+               ),
+               tabPanel(title = "Vaccination across the States",
+                        p("The following data visualization is meant
+                                  to illustrate trend in vaccination across
+                                  different states at a stated time range 
+                                  aginist the number of people distributed"),
+                        sidebarPanel(
+                          dateRangeInput("Date2","Select Date:",
+                                         start = "2020-12-20",
+                                         end = "2022-08-03",
+                                         min = "2020-12-20",
+                                         max = "2022-08-03",
+                                         format = "dd/mm/yy"),
+                          selectInput("State1","Select State:",
+                                      choices = unique(Vacc_Data[,"location"])),
+                          
+                          selectInput("y.variable2",
+                                      "Select y.axis Variable:",
+                                      choices =  colnames(Vacc_Data[,-c(1,2)]))
+                          
+                        ),
+                        mainPanel(
+                          plotOutput("plot2")
+                          
+                        )
+               ),
+               tabPanel(title = "Relationship between two Variabbles",
+                        p("The following data visualization 
+                                   illustrate the relationship between various 
+                                   variables across different states at a 
+                                  stated time range"),
+                        sidebarPanel(
+                          dateRangeInput("Date3","Select Date:",
+                                         start = "2020-12-20",
+                                         end = "2022-08-03",
+                                         min = "2020-12-20",
+                                         max = "2022-08-03",
+                                         format = "dd/mm/yy"),
+                          selectInput("State2","Select State:",
+                                      choices = unique(Vacc_Data[,"location"])),
+                          selectInput("x.variable1",
+                                      "Select x.axis Variable:",
+                                      choices =  colnames(Vacc_Data[,-c(1,2)])),
+                          selectInput("y.variable3",
+                                      "Select y.axis Variable:",
+                                      choices =  colnames(Vacc_Data[,-c(1,2)]))
