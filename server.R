@@ -1,4 +1,4 @@
-Vacc_Data <- read.csv("https://raw.githubusercontent.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/main/us_state_vaccinations%20(2).csv%22)
+Vacc_Data <- read.csv("https://raw.githubusercontent.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/main/us_state_vaccinations%20(2).csv")
 
 library(shiny)
 
@@ -30,3 +30,21 @@ shinyServer(
              x="Date",y=input$y.variable2)+
         geom_point()+theme(axis.text.x = element_text(angle = 90))
     })
+    
+    data_location1 = reactive({
+      
+      Vacc_Data %>% 
+        filter(date>=input$Date3[1] & date<=input$Date3[2])  %>% 
+        filter(location==input$State2)
+    })
+    output$plot3 = renderPlot({
+      ggplot(data_location1(),aes_string(x=input$x.variable1,
+                                         y=input$y.variable3))+
+        labs(title = paste("Distribution of",input$y.variable3,"aginist",
+                           input$x.variable1,"in",input$State2),
+             x=input$x.variable1,y=input$y.variable3)+
+        geom_point()+theme(axis.text.x = element_text(angle = 90))
+    })
+  }
+)
+
