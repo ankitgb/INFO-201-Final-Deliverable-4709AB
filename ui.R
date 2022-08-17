@@ -94,7 +94,13 @@ shinyUI(
                         p("The following data visualization is meant
                                   to illustrate trend in vaccination across
                                   different states at a stated time range 
-                                  against the number of people distributed"),
+                                  against the number of people distributed.
+                                  Within the given dataset, we are able to
+                                  select the state of Washington and the desired
+                                  date, ranging between 01/01/21 to 01/31/21 in
+                                  in order to obeserve the total number of 
+                                  distributed vaccincations in WA in the given
+                                  time frame"),
                         sidebarPanel(
                           dateRangeInput("Date2","Select Date:",
                                          start = "2020-12-20",
