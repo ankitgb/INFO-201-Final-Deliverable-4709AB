@@ -121,7 +121,7 @@ shinyUI(
                         p("The following data visualization 
                                    illustrate the relationship between various 
                                    variables across different states at a 
-                                  stated time range"),
+                                  stated time range. The two variables that we decided to look at in this chart are the number of vaccinations distributed in Washington in January 2021 and its relationship with the number of people vaccinated in Washington in January 2021. From looking at our previous questions and variables that we looked at, we decided to put the two together to analyze the specifics about the relationship. As you can see in the graph created after inputting these two variables, the relationship is quite positive, where as the number of distributed vaccines increases, the number of people getting vaccinated also increases tremendously."),
                         sidebarPanel(
                           dateRangeInput("Date3","Select Date:",
                                          start = "2020-12-20",
