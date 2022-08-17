@@ -40,7 +40,7 @@ shinyServer(
     output$plot3 = renderPlot({
       ggplot(data_location1(),aes_string(x=input$x.variable1,
                                          y=input$y.variable3))+
-        labs(title = paste("Distribution of",input$y.variable3,"aginist",
+        labs(title = paste("Distribution of",input$y.variable3,"against",
                            input$x.variable1,"in",input$State2),
              x=input$x.variable1,y=input$y.variable3)+
         geom_point()+theme(axis.text.x = element_text(angle = 90))

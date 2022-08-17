@@ -96,7 +96,7 @@ shinyUI(
                         p("The following data visualization is meant
                                   to illustrate trend in vaccination across
                                   different states at a stated time range 
-                                  aginist the number of people distributed"),
+                                  against the number of people distributed"),
                         sidebarPanel(
                           dateRangeInput("Date2","Select Date:",
                                          start = "2020-12-20",
@@ -117,7 +117,7 @@ shinyUI(
                           
                         )
                ),
-               tabPanel(title = "Relationship between two Variabbles",
+               tabPanel(title = "Relationship between two Variables",
                         p("The following data visualization 
                                    illustrate the relationship between various 
                                    variables across different states at a 
