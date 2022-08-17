@@ -11,3 +11,10 @@ library(shiny)
 
 # Create Shiny object
 shinyApp(ui = ui, server = server)
+
+source("ui.R")
+source("server.R")
+
+library(shiny)
+
+shinyApp(ui = ui, server = server)
