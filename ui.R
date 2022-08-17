@@ -158,7 +158,7 @@ shinyUI(
                ),
                title = "Conclusion",
                h1("Summary"),
-               p("A key takeaway in the Vaccination in the USA chart is that 
+               p("A key takeaway in the Vaccination in the USA chart is that all the states in the United States of America have the same general positively correlated trend between the amount of time that has passed in a month and the total number of vaccinations that have administered to citizens of the United States. As time goes on, the results can be viewed in a positive way as more and more people are being informed about the benefits to COVID-19 vaccination and being influenced to go get vaccinated. Washington State and the West Coast States seem to be the areas with the most total vaccinations, yet the other states are well on their way to increasing their vaccination rates as well.
                   A key takeaway in the Vaccination across the States chart is that
                  A key takeaway in the relationship between two variables chart is that there is a strong direct positive relationship between the variables vaccines distributed and vaccines administered in Washington State in January of 2021. These results can be viewed in many different ways but this indication of a strong positive correlation signifies that as more vaccines are getting distributed, more people are getting vaccinated in Washington. This ideology can be seen not just in Washington, but in the rest of the world in the struggle against COVID-19."),
                h1("Conclusion"),
