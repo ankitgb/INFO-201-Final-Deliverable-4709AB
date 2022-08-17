@@ -2,27 +2,34 @@ Vacc_Data <- read.csv("https://raw.githubusercontent.com/cpark00-1963343/INFO-20
 
 library(shiny)
 
+library(shiny)
+
 shinyServer(
   function(input, output, session) {
+    output$covid.jpg <- renderImage({
+      list(src = "https://github.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/blob/main/covid.jpg?raw=true",
+           width="50%",hieght=30)
+    },deleteFile = F)
     data_date_range = reactive({
       Vacc_Data %>% filter(date>=input$Date1[1] & date<=input$Date1[2])
     })
-
+    
     output$plot1 = renderPlot({
       ggplot(data_date_range(),aes_string(x="date",
                                           y=input$y.variable1,
                                           color="location"))+
-        geom_bar(stat = "identity")+labs(title = paste("Distribution of",input$y.variable1),
-                                         x="Date",y=input$y.variable1)+
-        theme(legend.position = "top",axis.text.x = element_text(angle = 90))
+        geom_point()+labs(title = paste("Distribution of",input$y.variable1),
+                          x="Date",y=input$y.variable1)+
+        theme(legend.position = "bottom",axis.text.x = element_text(angle = 90),
+              legend.direction = "horizontal")
     })
-
+    
     data_location = reactive({
       Vacc_Data %>% 
         filter(date>=input$Date2[1] & date<=input$Date2[2])  %>% 
         filter(location==input$State1)
     })
-
+    
     output$plot2 = renderPlot({
       ggplot(data_location(),aes_string(x="date",
                                         y=input$y.variable2))+
@@ -40,11 +47,10 @@ shinyServer(
     output$plot3 = renderPlot({
       ggplot(data_location1(),aes_string(x=input$x.variable1,
                                          y=input$y.variable3))+
-        labs(title = paste("Distribution of",input$y.variable3,"against",
+        labs(title = paste("Distribution of",input$y.variable3,"aginist",
                            input$x.variable1,"in",input$State2),
              x=input$x.variable1,y=input$y.variable3)+
         geom_point()+theme(axis.text.x = element_text(angle = 90))
     })
   }
 )
-
