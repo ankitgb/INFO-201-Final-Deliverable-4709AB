@@ -4,4 +4,4 @@
 
 By: Archit Gubiligari, Ankit Gubiligari, and Christine Park
 
-Shinyapps link: 
+Shinyapps link: https://ankitgg.shinyapps.io/info-201-final-deliverable-4709ab/
