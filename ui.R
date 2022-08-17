@@ -99,7 +99,7 @@ shinyUI(
                                   date, ranging between 01/01/21 to 01/31/21 in
                                   in order to obeserve the total number of 
                                   distributed vaccincations in WA in the given
-                                  time frame"),
+                                  time frame."),
                         sidebarPanel(
                           dateRangeInput("Date2","Select Date:",
                                          start = "2020-12-20",
