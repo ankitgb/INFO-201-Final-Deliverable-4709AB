@@ -37,7 +37,7 @@ shinyUI(
                ),
                title = "Introduction",
                h1("Introduction"),
-               imageOutput("covid_img"),
+               imageOutput("covid.jpg"),
                p(" Looking at our past couple of years, a lot has 
                                   changed due to COVID-19 Pandemic that has taken 
                                   the world by storm. Mask mandates and little to 
@@ -52,14 +52,12 @@ shinyUI(
                                   the public about the Virus and our resources to 
                                   combat it as long as COVID-19 is still present."),
                h2("Guiding Questions:"),
-               p("1:How did the population of people in the US with 
-                                  COVID increase as the pandemic continued and 
-                                  resources declined?"),
-               p("2:What was the location with the highest covid 
-                                  infected population in 2020?"),
-               p("3:What were the average number of hospitalizations 
-                                  in 2020 in relationship to vaccination rate?"),
-               p("4:In which location was the covid fatality rate the highest?"),
+               p("1) How did the population of COVID-19 vaccinated 
+                 people change over time in 2021?"),
+               p("2) How did the number of total distributed vaccinations change in 
+                 Washington State over time in January, 2021?"),
+               p("3) How does the total number of vaccinations distributed affect the number 
+               of vaccinated people in Washington in January, 2021?"),
                h2("Dataset:"),
                p("This dataset is data that is derived from the organization Our 
                                   World in Data and their data on covid 19 and consists of state 
