@@ -137,3 +137,31 @@ shinyUI(
                           selectInput("y.variable3",
                                       "Select y.axis Variable:",
                                       choices =  colnames(Vacc_Data[,-c(1,2)]))
+                          
+                        ),
+                        mainPanel(
+                          plotOutput("plot3")
+                        )
+               ),
+               tabPanel(tags$style(
+                 "h1{
+                         font-size:30px;
+                         font-weight:bold;
+                         color:blue;
+                         }
+                         p{
+                         font-size:15px;
+                         color:black;
+                         }"
+               ),
+               title = "Conclusion",
+               h1("Summary"),
+               p(""),
+               h1("Conclusion"),
+               p(""))
+               
+               
+    )
+  )
+)
+
