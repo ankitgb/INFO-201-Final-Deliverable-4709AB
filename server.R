@@ -7,8 +7,8 @@ library(shiny)
 shinyServer(
   function(input, output, session) {
     output$covid.jpg <- renderImage({
-      list(src = "https://github.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/blob/main/covid.jpg?raw=true",
-           width="50%",height=30)
+      list(src = "covid.jpg",
+           width="70%",height=400)
     },deleteFile = F)
     data_date_range = reactive({
       Vacc_Data %>% filter(date>=input$Date1[1] & date<=input$Date1[2])
@@ -47,7 +47,7 @@ shinyServer(
     output$plot3 = renderPlot({
       ggplot(data_location1(),aes_string(x=input$x.variable1,
                                          y=input$y.variable3))+
-        labs(title = paste("Distribution of",input$y.variable3,"aginist",
+        labs(title = paste("Distribution of",input$y.variable3,"against",
                            input$x.variable1,"in",input$State2),
              x=input$x.variable1,y=input$y.variable3)+
         geom_point()+theme(axis.text.x = element_text(angle = 90))

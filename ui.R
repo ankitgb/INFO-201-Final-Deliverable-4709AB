@@ -8,6 +8,7 @@ library(shinyauthr)
 library(shinyWidgets)
 library(plotly)
 
+
 Vacc_Data <- read.csv("https://raw.githubusercontent.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/main/us_state_vaccinations%20(2).csv")
 
 shinyUI(
