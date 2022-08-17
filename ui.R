@@ -28,8 +28,8 @@ shinyUI(
                ),
                title = "Introduction",
                h1("Introduction"),
-               p("")),
-               tabPanel(title = "Vaccination in USA",
+               p("Looking at our past couple of years, a lot has changed due to COVID-19 Pandemic that has taken the world by storm. Mask mandates and little to no social gatherings caused the world to fall into a depression that is still reaping the world today. Many mistakes were made in the world by not taking action quickly enough to combat this virus and the citizens often were ignorant or did not fully understand the severity of this pandemic situation. With these datasets and our analysis, we hope to provide more education to the public about the Virus and our resources to combat it as long as COVID-19 is still present. \n Guiding Questions: \n1.How did the population of COVID-19 vaccinated people change over time in 2021? \n2.")),
+               tabPanel(title = "Vaccination in USA ",
                         p("The following data visualization is meant
                                   to illustrate trend in vaccination at a 
                                   stated time range."),
