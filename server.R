@@ -8,7 +8,7 @@ shinyServer(
   function(input, output, session) {
     output$covid.jpg <- renderImage({
       list(src = "https://github.com/cpark00-1963343/INFO-201-Final-Deliverable-4709AB/blob/main/covid.jpg?raw=true",
-           width="50%",hieght=30)
+           width="50%",height=30)
     },deleteFile = F)
     data_date_range = reactive({
       Vacc_Data %>% filter(date>=input$Date1[1] & date<=input$Date1[2])
