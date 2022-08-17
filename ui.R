@@ -119,7 +119,7 @@ shinyUI(
                         p("The following data visualization 
                                    illustrate the relationship between various 
                                    variables across different states at a 
-                                  stated time range. The two variables that we decided to look at in this chart are the number of vaccinations distributed in Washington in January 2021 and its relationship with the number of people vaccinated in Washington in January 2021. From looking at our previous questions and variables that we looked at, we decided to put the two together to analyze the specifics about the relationship. As you can see in the graph created after inputting these two variables, the relationship is quite positive, where as the number of distributed vaccines increases, the number of people getting vaccinated also increases tremendously. There are several things that could have affected these results such as people resistant to vaccinations and inaccurate inventories of doses of vaccines distributed and shipped out. These factors were taken into account when creating this application and take impact in our results and findings. This plot is created to be a scatterplot so we can see the relationship and create a trend line if necessary to display patterns."),
+                                  stated time range. The two variables that we decided to look at in this chart are the number of vaccinations distributed in Washington in January 2021 and its relationship with the number of people vaccinated in Washington in January 2021. From looking at our previous questions and variables that we looked at, we decided to put the two together to analyze the specifics about the relationship. As you can see in the graph created after inputting these two variables, the relationship is quite positive, where as the number of distributed vaccines increases, the number of people getting vaccinated also increases tremendously. There are several things that could have affected these results such as people resistant to vaccinations and inaccurate inventories of doses of vaccines distributed and shipped out. These factors were taken into account when creating this application and take impact in our results and findings. This plot is created to be a scatterplot so we can see the relationship and create a trend line if necessary to display a pattern."),
                         sidebarPanel(
                           dateRangeInput("Date3","Select Date:",
                                          start = "2020-12-20",
@@ -154,9 +154,11 @@ shinyUI(
                ),
                title = "Conclusion",
                h1("Summary"),
-               p(""),
+               p("A key takeaway in the Vaccination in the USA chart is that 
+                  A key takeaway in the Vaccination across the States chart is that
+                 A key takeaway in the relationship between two variables chart is that there is a strong direct positive relationship between the variables vaccines distributed and vaccines administered in Washington State in January of 2021. These results can be viewed in many different ways but this indication of a strong positive correlation signifies that as more vaccines are getting distributed, more people are getting vaccinated in Washington. This ideology can be seen not just in Washington, but in the rest of the world in the struggle against COVID-19."),
                h1("Conclusion"),
-               p(""))
+               p("There were strong patterns in all of our charts and datasets however when diving closely into states rather than the United States of America as a whole, the patterns were tremendously clear and easy to spot. One of these notable patterns occurred in the Relationship between Two Variables Chart. As the total number of vaccinations distributed in Washington increased on the X-Axis, the number of total vaccinations being administered trended upwards as well throughout the month of January in 2021. In the beginning of the month, there were less than 600000 doses of vaccinations being distributed in Washington and as the number increased to over 1000000 vaccinations doses being distributed, the total vaccinations increased from 200000 to over 700000. I chose to examine these specific time period in Washington because there is a lot of influx of vaccinations and others treatments for the COVID-19 Virus. "))
                
                
     )
