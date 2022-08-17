@@ -98,7 +98,7 @@ shinyUI(
                                   date, ranging between 01/01/21 to 01/31/21 in
                                   in order to obeserve the total number of 
                                   distributed vaccincations in WA in the given
-                                  time frame"),
+                                  time frame."),
                         sidebarPanel(
                           dateRangeInput("Date2","Select Date:",
                                          start = "2020-12-20",
@@ -164,7 +164,7 @@ shinyUI(
                h1("Conclusion"),
                p("There were strong patterns in all of our charts and datasets however when diving closely into states rather than the United States of America as a whole, the patterns were tremendously clear and easy to spot.
                  
-                 
+                 Another notable pattern that occuered in the Vaccinations Across State chart was as the time span increased in the X-axis, going from 01/01/22 to 01/31/22, total number of distrubted vaccinations in Washington also increaseed on the Y-axis. There was a more drastic increase in the begining of the month, as shown through the steep positive points on the graph, and then towards the latter part of January, the values began to become a little stagnant. 
                  The last notable pattern occurred in the Relationship between Two Variables Chart. As the total number of vaccinations distributed in Washington increased on the X-Axis, the number of total vaccinations being administered trended upwards as well throughout the month of January in 2021. In the beginning of the month, there were less than 600000 doses of vaccinations being distributed in Washington and as the number increased to over 1000000 vaccinations doses being distributed, the total vaccinations increased from 200000 to over 700000. I chose to examine these specific time period in Washington because there is a lot of influx of vaccinations and others treatments for the COVID-19 Virus. Some broader implications of this chart include similar patterns emerging around the world as the COVID Virus rages on and people can use this information in order to be better prepared in the future for pandemics and improve public vaccination rates."))
                
                
